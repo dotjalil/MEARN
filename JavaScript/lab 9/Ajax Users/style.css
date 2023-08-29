@@ -1,0 +1,65 @@
+body {
+  background-color: #ecf0f1;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+  height: 100%;
+}
+
+#preloader {
+  text-align: center;
+  margin-top: 250px;
+  font-size: 24px;
+}
+
+#authors ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  width: 180px;
+}
+
+#authors button {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#authors button.active {
+  background: #34495e;
+}
+
+#posts {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 30px;
+  width: 600px;
+}
+.post {
+  background-color: #34495e;
+  padding: 10px 25px;
+  border-radius: 15px;
+}
+
+.post .title {
+  color: #ecf0f1;
+}
+
+.post .content {
+  color: #bdc3c7;
+}

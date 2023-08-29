@@ -1,0 +1,55 @@
+body {
+  padding-top: 150px;
+}
+.container {
+  width: 150px;
+  height: 300px;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tail {
+  width: 25px;
+  height: 100px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.bulb {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.green {
+  background-color: green;
+}
+
+.green:hover {
+  box-shadow: 0 0 4px 10px green;
+  transform: scale(1.1);
+}
+
+.yellow {
+  background-color: orange;
+}
+
+.yellow:hover {
+  box-shadow: 0 0 4px 10px orange;
+  transform: scale(1.1);
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  box-shadow: 0 0 4px 10px red;
+  transform: scale(1.1);
+}

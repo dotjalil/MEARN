@@ -1,0 +1,9 @@
+@mixin fontSize($size, $maxSize) {
+  $step: 2;
+  @while $size <= $maxSize {
+    .font-#{$size}px {
+      font-size: #{$size}px;
+    }
+    $size: $size + $step;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 750px;
+        margin: 50px auto;
+      }
+      #slider {
+        text-align: center;
+      }
+      #slider .slider-img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+      #slider .slider-item {
+        list-style: none;
+      }
+      #slider .slider-item {
+        display: none;
+      }
+      #slider .slider-item.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="slider">
+        <ul class="slides">
+          <li class="slider-item active">
+            <img src="./slides/1.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/2.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/3.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/4.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/5.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/6.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/7.jpg" alt="" class="slider-img" />
+          </li>
+          <li class="slider-item">
+            <img src="./slides/8.jpg" alt="" class="slider-img" />
+          </li>
+        </ul>
+        <div class="slider-controls">
+          <button class="prev" onclick="prevSlide()">Prev</button>
+          <button class="next" onclick="play()">Play</button>
+          <button class="next" onclick="pause()">Pause</button>
+          <button class="next" onclick="nextSlide()">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="./task-4.js"></script>
+  </body>
+</html>

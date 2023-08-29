@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="keywords" content="html,css,JS">
+        <meta name="description" content="cnsdjcbsjdbcsdcvsd">
+        <style>
+            table,td,th{
+                border: solid black 3px;
+            }
+        </style>
+        <script>
+            
+        </script>
+        <link rel="stylesheet" href="">
+        <title>
+            first webpage
+        </title>
+    </head>
+    <body>
+        <h1>heading</h1>
+        <h2>heading</h2>
+        <h3>heading</h3>
+        <h4>heading</h4>
+        <h5>heading</h5>
+        <h6>heading</h6>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nulla 
+            <br> <!-- break line -->
+            inventore aliquam expedita minus dolorem et repudiandae dicta beatae velit amet fuga! Totam veritatis deleniti
+            <hr> <!-- horizontal ruler -->
+            nam, sed veniam natus amet?
+        </p>
+        <a href="https://www.google.com" target="_" >
+            <img src="./2.jpg" alt="lamorghini car image" width="200px" >
+        </a>
+        <!-- multiple page website  -->
+        <img src="./2.jpg" alt="orange car image" usemap="#myMap">
+        <map name="myMap">
+            <area shape="rect" coords="413,914,616,870" href="https://www.google.com" alt="">
+        </map>
+        <!-- <iframe src="./second.html" frameborder="5"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.69294928982!2d31.021464625184812!3d30.557978094058722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d7223ff2d63f%3A0x9d531b61c0ebb81b!2sITI%20Menofia%20Branch!5e0!3m2!1sar!2seg!4v1689150160869!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3
+                <ul>
+                    <li>sub item1</li>
+                    <li>sub item2</li>
+                </ul>
+            </li>
+        </ul>
+        <ol>
+            <li>item1</li>
+            <li>item2
+                <ol>
+                    <li>sub item1</li>
+                    <li>sub item2</li>
+                </ol>
+            </li>
+            <li>item3</li>
+        </ol>
+        <dl>
+            <dt>html</dt>
+            <dd>
+                a language to markup text 
+            </dd>
+        </dl>
+        <table>
+            <tr>
+                <th>name</th>
+                <th>job profile</th>
+                <th>address</th>
+                <th>salary</th>
+            </tr>
+            <tr>
+                <td>item wefwefwef</td>
+                <td rowspan="2">item</td>
+                <td colspan="2">item</td>
+                <!-- <td>item</td> -->
+            </tr>
+            <tr>
+                <td>item</td>
+                <!-- <td>item</td> -->
+                <td>itemwefwefwef</td>
+                <td>item</td>
+            </tr>
+            <tr>
+                <td>item</td>
+                <td>itemwefwefwe</td>
+                <td>item</td>
+                <td>item</td>
+            </tr>
+        </table>
+        <form action="form.php" method="">
+            <label for="firstInput">name</label>
+            <input type="text" id="firstInput" name="fNmame">
+            <br>
+            <label for="">address</label>
+            <input type="text">
+            <br>
+            <label for="">salary</label>
+            <input type="text">
+            <br>
+            <label for="">job title</label>
+            <input type="text" hidden>
+            <br>
+            <label for="password">password</label>
+            <input type="password" id="password" name="pass">
+            <br>
+            <label for="email">email</label>
+            <input type="email" name="mail" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <input type="checkbox" name="" id="">
+            <br>
+            <label for="">gender</label>
+            <input type="radio" name="gender" value="male" id="">
+            <label for="">male</label>
+            <input type="radio" name="gender" id="" value="female">
+            <label for="">female</label><br>
+            <select name="" id="">  
+               <option value="">html</option>
+               <option value="">css</option>
+               <option value="">JS</option>
+               <option value="">python</option>
+               <option value="">nodeJS</option>
+            </select>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>log in</button>
+            <input type="submit" value="submit">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playball&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Info</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">Fill out your info</h1>
+      <form action="thank-you.html">
+        <label for="fName"
+          >First Name <input type="text" name="fName" id="fName" /> </label
+        ><br />
+
+        <label for="lName"
+          >Last Name <input type="text" name="lName" id="lName" /> </label
+        ><br />
+
+        <label for="email"
+          >Email <input type="email" name="email" id="email" /> </label
+        ><br />
+
+        <div class="full">
+          <div class="width-30">
+            <p>Gender</p>
+          </div>
+          <div class="width-70">
+            <label for="male">
+              <input type="radio" name="gender" value="male" id="male" /> Male
+            </label>
+            <label for="female">
+              <input type="radio" name="gender" value="female" id="female" />
+              Female
+            </label>
+          </div>
+        </div>
+
+        <div class="full">
+          <div class="width-30">
+            <p>Flavor</p>
+          </div>
+          <div class="width-70">
+            <label for="pepperoni">
+              <input
+                type="checkbox"
+                name="falvor"
+                value="pepperoni"
+                id="pepperoni"
+              />
+              Pepperoni
+            </label>
+            <label for="cheese-lovers">
+              <input
+                type="checkbox"
+                name="falvor"
+                value="cheese lovers"
+                id="cheese-lovers"
+              />
+              Cheese Lovers
+            </label>
+            <label for="bakon">
+              <input type="checkbox" name="falvor" value="bakon" id="bakon" />
+              Bakon
+            </label>
+          </div>
+        </div>
+
+        <div class="full">
+          <div class="width-30">
+            <label for="comments">Comments </label>
+          </div>
+          <div class="width-70">
+            <textarea name="comments" id="comments"></textarea>
+          </div>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

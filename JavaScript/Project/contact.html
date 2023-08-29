@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body id="top">
+    <header class="header">
+      <div class="container">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="contact.html" style="font-weight: bold">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cart-wrapper">
+          <button class="cart-button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+          </button>
+          <div class="cart">
+            <div class="cart-header">
+              <h3>Cart</h3>
+              <button class="close-cart">X</button>
+            </div>
+            <div class="cart-body"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container form-container">
+      <form onsubmit="handleFormSubmit(event)">
+        <label for="fullName"
+          >Full Name <input type="text" name="fullName" id="fullName" /> </label
+        ><br />
+
+        <label for="phone"
+          >Phone Number <input type="text" name="phone" id="phone" /> </label
+        ><br />
+
+        <label for="email"
+          >Email <input type="email" name="email" id="email" /> </label
+        ><br />
+
+        <div class="full">
+          <label for="comments">Your Message </label>
+          <textarea name="comments" id="comments"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" />
+        <div class="message"></div>
+      </form>
+    </div>
+
+    <footer>
+      <section class="container">
+        <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+        <a href="#top">Back to top</a>
+        <ul class="social-links">
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/9672ea57dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./slider.js"></script>
+    <script src="./script.js"></script>
+    <script src="./contact.js"></script>
+  </body>
+</html>

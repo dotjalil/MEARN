@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item"><img src="./images/1.jpg" alt="Image 1" /></div>
+      <div class="grid-item"><img src="./images/2.jpg" alt="Image 2" /></div>
+      <div class="grid-item"><img src="./images/3.jpg" alt="Image 3" /></div>
+      <div class="grid-item"><img src="./images/4.jpg" alt="Image 4" /></div>
+      <div class="grid-item"><img src="./images/5.jpg" alt="Image 5" /></div>
+      <div class="grid-item"><img src="./images/6.jpg" alt="Image 6" /></div>
+      <div class="grid-item"><img src="./images/1.jpg" alt="Image 1" /></div>
+      <div class="grid-item"><img src="./images/2.jpg" alt="Image 2" /></div>
+      <div class="grid-item"><img src="./images/3.jpg" alt="Image 3" /></div>
+    </div>
+
+    <div class="slider-container">
+      <span class="close-btn" onclick="closeSlider()">&times;</span>
+      <div class="slider-content">
+        <img id="slider-img" src="" alt="Slider Image" />
+      </div>
+      <span class="prev-btn" onclick="prevSlide()">&#10094;</span>
+      <span class="next-btn" onclick="nextSlide()">&#10095;</span>
+    </div>
+    <script src="./jquery-3.7.0.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

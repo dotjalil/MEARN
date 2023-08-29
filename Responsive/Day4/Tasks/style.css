@@ -1,0 +1,35 @@
+.main .main-title, .main .main-btn {
+  color: rgb(218, 17, 17);
+}
+.main .main-subtitle {
+  color: rgb(69, 69, 248);
+}
+.main .main-btn {
+  transition: 0.5s;
+}
+.main .main-btn:hover {
+  color: rgb(69, 69, 248);
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .finish-btn {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .finish-btn {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

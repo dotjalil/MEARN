@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form with Input Validation</title>
+  </head>
+  <body>
+    <h1>User Login</h1>
+    <form>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        pattern="[A-Za-z]+"
+        placeholder="Enter your username"
+        title="Username must contain only alphabetical characters"
+        required
+      /><br />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email address"
+        title="Please enter a valid email address"
+        required
+      /><br />
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        max-width: 750px;
+        margin: 50px auto;
+      }
+      .marbles {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .marble .image {
+        width: 70px;
+        height: 70px;
+        background-image: url("./img/marble1.jpg");
+        background-size: contain;
+      }
+      .active .image {
+        background-image: url("./img/marble3.jpg");
+      }
+      .transition .image {
+        background-image: url("./img/marble2.jpg");
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="marbles">
+        <li class="marble">
+          <div class="image"></div>
+        </li>
+        <li class="marble">
+          <div class="image"></div>
+        </li>
+        <li class="marble">
+          <div class="image"></div>
+        </li>
+        <li class="marble">
+          <div class="image"></div>
+        </li>
+        <li class="marble">
+          <div class="image"></div>
+        </li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

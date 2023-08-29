@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form onsubmit="handleFormSubmit(event)">
+        <label for="fullName"
+          >Name <input type="text" name="fullName" id="fullName" />
+        </label>
+
+        <label for="email"
+          >Email <input type="email" name="email" id="email" />
+        </label>
+
+        <label for="password"
+          >Password <input type="password" name="password" id="password" />
+        </label>
+
+        <div class="full">
+          <div class="width-30">
+            <p>Gender</p>
+          </div>
+          <div class="width-70">
+            <label for="male">
+              <input type="radio" name="gender" value="male" id="male" /> Male
+            </label>
+            <label for="female">
+              <input type="radio" name="gender" value="female" id="female" />
+              Female
+            </label>
+          </div>
+        </div>
+
+        <div class="full">
+          <div class="width-30">
+            <p>Sports</p>
+          </div>
+          <div class="width-70">
+            <label for="tennis">
+              <input type="checkbox" name="sports" value="tennis" id="tennis" />
+              Tennis
+            </label>
+            <label for="running">
+              <input
+                type="checkbox"
+                name="sports"
+                value="running"
+                id="running"
+              />
+              Running
+            </label>
+            <label for="football">
+              <input
+                type="checkbox"
+                name="sports"
+                value="football"
+                id="football"
+              />
+              Football
+            </label>
+          </div>
+        </div>
+
+        <div class="full">
+          <div class="width-30">
+            <label for="country">Country </label>
+          </div>
+          <div class="width-70">
+            <select name="country" id="country">
+              <option value="">Select Country</option>
+              <option value="zimbabwe">zimbabwe</option>
+              <option value="egypt">egypt</option>
+              <option value="libia">libia</option>
+              <option value="sudan">sudan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="actions">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" onclick="resetForm()" />
+        </div>
+      </form>
+      <div class="message">
+        <p class="error">- Name must be blah blah blah</p>
+        <p class="error">- Name must be blah blah blah</p>
+        <p class="error">- Name must be blah blah blah</p>
+        <p class="error">- Name must be blah blah blah</p>
+        <p class="error">- Name must be blah blah blah</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

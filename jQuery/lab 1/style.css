@@ -1,0 +1,24 @@
+.image-list {
+  /* list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  grid-auto-rows: 10px;
+  grid-auto-flow: column; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Add some space between the items */
+}
+
+img {
+  max-width: 100%;
+  width: calc(20% - 10px);
+  object-fit: cover;
+}
+
+#preview {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}

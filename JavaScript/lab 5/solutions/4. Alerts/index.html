@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .container {
+        max-width: 750px;
+        margin: 150px auto;
+      }
+      .actions {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
+      button {
+        color: #fff;
+        display: flex;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        align-items: center;
+        gap: 10px;
+        min-width: 150px;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      button.success {
+        background: #2ecc71;
+      }
+      button.danger {
+        background: #e74c3c;
+      }
+
+      button svg {
+        width: 20px;
+      }
+      .message {
+        background-color: #ecf0f1;
+        padding: 50px;
+        margin-top: 50px;
+        border-radius: 20px;
+        text-align: center;
+      }
+      .message svg {
+        width: 200px;
+      }
+      .message.success h1,
+      .message.success p,
+      .message.success svg path {
+        color: #2ecc71;
+      }
+      .message.danger h1,
+      .message.danger p,
+      .message.danger svg path {
+        color: #e74c3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="actions">
+        <button class="success" onclick="showSuccessMessage()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          Success Alert
+        </button>
+        <button class="danger" onclick="showDangerMessage()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          Error Alert
+        </button>
+      </div>
+      <div class="message">
+        <h1>Hit a button to see a message</h1>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

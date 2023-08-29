@@ -1,0 +1,179 @@
+/*--------------------*
+    General Styles
+*---------------------*/
+
+body {
+  background: url(./img/bg2.jpg);
+  background-size: initial;
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: "Roboto", sans-serif;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.logo,
+.page-title {
+  font-family: "Playball", cursive;
+  text-align: center;
+  font-size: 80px;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/*--------------------*
+    Home Page
+*---------------------*/
+
+iframe {
+  width: 100%;
+}
+
+table,
+td,
+th {
+  border: 2px solid black;
+}
+
+.intro-img {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.footer-nav {
+  padding: 20px 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-nav li {
+  list-style: none;
+}
+
+.footer-nav > li > a {
+  text-decoration: none;
+  color: rgb(0, 0, 157);
+}
+
+.footer-nav > li > a:hover {
+  text-decoration: none;
+  color: rgb(0 0 157 / 60%);
+}
+
+/*--------------------*
+    Info Page
+*---------------------*/
+
+form {
+  width: 100%;
+}
+
+form label > input {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(11 13 139 / 11%);
+  padding: 10px;
+  margin-top: 10px;
+}
+
+form label {
+  /* padding-bottom: 20px; */
+}
+
+.full {
+  display: flex;
+  align-items: center;
+}
+
+.width-70 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.width-70 label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.width-70 label > input {
+  margin: 0;
+  width: auto;
+}
+
+.width-30 {
+  width: 30%;
+  font-weight: bold;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid rgb(11 13 139 / 11%);
+  padding: 10px;
+  margin-top: 40px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid rgb(11 13 139 / 11%);
+  padding: 10px;
+  background-color: #5151c9;
+  color: white;
+}
+
+/*--------------------*
+    Our Menu
+*---------------------*/
+
+dl dt {
+  font-family: "Playball";
+  font-size: 18px;
+}
+
+dl dt > dd {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+img.full {
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

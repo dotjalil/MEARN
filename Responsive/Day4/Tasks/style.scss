@@ -1,0 +1,29 @@
+@import "./Variables";
+@import "./logic";
+
+.main {
+  .main-title {
+    color: $primaryColor;
+  }
+  .main-subtitle {
+    color: $secondaryColor;
+  }
+  .main-btn {
+    @extend .main-title;
+    transition: 0.5s;
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+@include fontSize(14, 18); // min , max , step
+
+.finish-btn {
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+}

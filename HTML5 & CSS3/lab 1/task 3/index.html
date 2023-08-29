@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RGB Color Picker</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: rgb(0, 0, 0); /* Initial text color (black) */
+      }
+
+      .color-slider {
+        width: 80%;
+        max-width: 400px;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Sample Text</h1>
+    <div class="color-slider">
+      <label for="red">Red:</label>
+      <input type="range" id="red" min="0" max="255" value="0" />
+
+      <label for="green">Green:</label>
+      <input type="range" id="green" min="0" max="255" value="0" />
+
+      <label for="blue">Blue:</label>
+      <input type="range" id="blue" min="0" max="255" value="0" />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
