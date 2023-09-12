@@ -5,6 +5,9 @@
 .*
 !/.gitignore
 
+### Node modules
+node_modules
+
 ### Video ###
 *.3g2
 *.3gp
