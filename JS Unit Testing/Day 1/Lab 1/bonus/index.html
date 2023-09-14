@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha and Chai Test</title>
+    <!-- Include the Mocha and Chai libraries -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.1.3/mocha.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.1.3/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.3.4/chai.min.js"></script>
+  </head>
+  <body>
+    <!-- Create a placeholder for Mocha test results -->
+    <div id="mocha"></div>
+
+    <!-- Initialize Mocha and run tests -->
+    <script>
+      mocha.setup("bdd");
+    </script>
+
+    <script src="script.js"></script>
+    <!-- Include your test script -->
+    <script src="tests.js"></script>
+
+    <!-- Run Mocha tests after your test script -->
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
