@@ -1,0 +1,54 @@
+<div class="container w-50 m-auto">
+  <form class="mt-5" (submit)="handleFormSubmit($event)">
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row mb-4">
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example1">Name</label>
+          <input
+            #studentNameInput
+            type="text"
+            id="form3Example1"
+            class="form-control {{ validName ? 'is-valid' : 'is-invalid' }}"
+            [value]="studentName"
+            (input)="handleStudentNameInput(studentNameInput.value)"
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-outline">
+          <label class="form-label" for="form3Example2">Age</label>
+          <input
+            #studentAgeInput
+            type="number"
+            id="form3Example2"
+            class="form-control {{ validAge ? 'is-valid' : 'is-invalid' }}"
+            [value]="studentAge"
+            (input)="handleStudentAgeInput(studentAgeInput.value)"
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4 w-100">
+      Sign up
+    </button>
+  </form>
+  <table *ngIf="students.length > 0" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <th scope="row">{{ student.name }}</th>
+        <td>{{ student.age }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

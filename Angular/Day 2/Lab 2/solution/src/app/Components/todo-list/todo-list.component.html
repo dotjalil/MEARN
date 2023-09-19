@@ -1,0 +1,61 @@
+<section class="vh-100" style="background-color: #e2d5de">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 15px">
+          <div class="card-body p-5">
+            <h6 class="mb-3">Awesome Todo List</h6>
+
+            <form
+              class="d-flex justify-content-center align-items-center mb-4"
+              (submit)="handleFormSubmit($event)"
+            >
+              <div class="form-outline flex-fill">
+                <input
+                  #taskTitleElement
+                  (input)="handleTaskTitle(taskTitleElement.value)"
+                  [value]="taskTitle"
+                  type="text"
+                  id="form3"
+                  class="form-control form-control-lg"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg ms-2">
+                Add
+              </button>
+            </form>
+
+            <ul *ngIf="tasks.length > 0" class="list-group mb-0">
+              <li
+                *ngFor="let task of tasks; let i = index"
+                class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2"
+              >
+                <div class="d-flex align-items-center">{{ task }}</div>
+                <button
+                  class="remove-btn"
+                  style="width: 24px; height: 24px"
+                  (click)="removeTask(i)"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
