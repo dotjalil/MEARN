@@ -1,0 +1,43 @@
+<form
+  class="mt-5"
+  [formGroup]="studentForm"
+  (submit)="handleAddStudentForm($event)"
+>
+  <!-- 2 column grid layout with text inputs for the first and last names -->
+  <div class="row mb-4">
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="form3Example1">Name</label>
+        <input
+          formControlName="studentName"
+          type="text"
+          id="form3Example1"
+          class="form-control {{ studentNameValidationCSSClass }}"
+          (input)="validateStudentName(getStudentName.status)"
+        />
+        <div class="valid-feedback" *ngIf="getStudentName.status === 'VALID'">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-outline">
+        <label class="form-label" for="form3Example2">Age</label>
+        <input
+          formControlName="age"
+          type="number"
+          id="form3Example2"
+          class="form-control {{ ageValidationCSSClass }}"
+          (input)="validateStudentAge(getAge.status)"
+        />
+        <div class="valid-feedback">Looks good!</div>
+        <!-- <div  class="invalid-feedback">{{getAge.ha}}</div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4 w-100">
+    Sign up
+  </button>
+</form>

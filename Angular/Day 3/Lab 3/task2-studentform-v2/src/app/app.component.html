@@ -1,0 +1,6 @@
+<div class="container w-50 m-auto">
+  <app-add-student-form
+    (addStudentEvent)="addStudent($event)"
+  ></app-add-student-form>
+  <app-students-table [students]="students"></app-students-table>
+</div>
